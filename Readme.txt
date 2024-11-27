@@ -35,5 +35,4 @@ Base de données : H2 (en mémoire)
 ##possibilité installation via Git :
 ## Installation et démarrage
 
-git clone [URL_DU_REPO]
-cd [NOM_DU_DOSSIER]
+git clone https://github.com/Maru987/TahitiTimeNumerique
