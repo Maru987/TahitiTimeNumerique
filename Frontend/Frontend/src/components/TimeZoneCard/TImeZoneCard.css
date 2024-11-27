@@ -1,0 +1,93 @@
+.timezone-card {
+    width: 230px;
+    margin: 20px;
+    background-color: #2B2D42;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+}
+
+.time-display {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.utc-offset {
+    text-align: center;
+    color: #8D99AE;
+    font-size: 0.9rem;
+}
+
+.date-display {
+    text-align: center;
+    color: #8D99AE;
+    margin-top: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.edit-button, .delete-button {
+    padding: 5px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #8D99AE;
+    color: white;
+}
+
+.delete-button {
+    background-color: #EF233C;
+    color: white;
+}
+
+.edit-form {
+    width: 100%;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: rgb(30, 41, 59);
+    color: white;
+    border: 1px solid rgb(51, 65, 85);
+    font-size: 1rem;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: rgb(59, 130, 246);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Modifier le style du bouton Edit pendant l'édition */
+.timezone-card .edit-button.editing {
+    background-color: rgb(59, 130, 246);
+}
+
+/* Animation de transition pour l'input */
+.edit-form {
+    animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

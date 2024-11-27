@@ -1,0 +1,14 @@
+#root {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.timezone-container{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
